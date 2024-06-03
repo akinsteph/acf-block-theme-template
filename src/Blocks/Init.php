@@ -39,15 +39,15 @@ class Init
             ]);
 
             acf_register_block_type([
-                'name'              => 'navigator-breadcrumb-block',
-                'title'             => __('Navigator Breadcrumb'),
-                'description'       => __('Navigator Breadcrumb'),
+                'name'              => 'abtt-breadcrumb-block',
+                'title'             => __('Abtt Breadcrumb'),
+                'description'       => __('Abtt Breadcrumb'),
                 'render_template'   => __DIR__ . '/navigator-breadcrumb/navigator-breadcrumb.php',
                 'category'          => 'theme',
                 'icon'              => 'dashicons-admin-links',
                 'keywords'          => [ 'Breadcrumb', 'Navigator' ],
                 'enqueue_assets'    => function() {
-                    wp_enqueue_style( 'navigator-breadcrumb-block', NAVIGATOR_BLOCKS_URI . '/navigator-breadcrumb/navigator-breadcrumb.css', '', NAVIGATOR_WP_THEME_VERSION, 'all' );
+                    wp_enqueue_style( 'navigator-breadcrumb-block', NAVIGATOR_BLOCKS_URI . '/abtt-breadcrumb/abtt-breadcrumb.css', '', NAVIGATOR_WP_THEME_VERSION, 'all' );
                 }
             ]);
 

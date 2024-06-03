@@ -29,7 +29,7 @@ This repository provides a WordPress theme template for developing custom ACF (A
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/your-username/your-theme.git
+   git clone https://github.com/akinsteph/acf-block-theme-template.git
    ```
 
 2. **Search and Replace Placeholders**
@@ -66,9 +66,17 @@ This repository provides a WordPress theme template for developing custom ACF (A
 
 ### Register a New Block
 
-1. Create a new PHP file for your block in the `src/Blocks` directory.
-2. Register your block using `acf_register_block_type()` in your block's PHP file.
-3. Create a corresponding template file in the `templates` directory for your block.
+1. Create a new directory for your block in the `src/Blocks` folder.
+2. Add a PHP file for your block (e.g., `src/Blocks/your-block/your-block.php`).
+3. Add an SCSS file for your block styles (e.g., `src/Blocks/your-block/your-block.scss`).
+4. Register your block using `acf_register_block_type()` in your `src/Blocks/Init.php` PHP file.
+
+### Example: Breadcrumb Block
+
+The Breadcrumb Block is organized in `src/Blocks/abtt-breadcrumb` and includes:
+
+- `abtt-breadcrumb.php`: The PHP file for rendering the block.
+- `abtt-breadcrumb.scss`: The SCSS file for styling the block.
 
 ### Compile Styles
 
