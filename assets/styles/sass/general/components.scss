@@ -1,0 +1,37 @@
+//BreadCrumbs
+.abtt-breadcrumb {
+  @apply bg-white-off_white h-[72px] py-lg;
+
+  &-row {
+    @apply flex gap-sm items-center justify-start;
+
+    a,
+    span {
+      @apply capitalize text-orange font-normal text-xs leading-lg
+    }
+
+    a {
+      @apply text-orange opacity-[25%];
+    }
+
+    span {
+      @apply text-orange;
+    }
+  }
+}
+
+//block content styles
+.block-content {
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply py-md;
+  }
+
+  figure {
+    figcaption {
+      @apply text-sm font-light font-body leading-lg text-center w-full text-black-site opacity-[50%];
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.abtt-breadcrumb {
+  @apply bg-white-off_white h-[72px] py-lg;
+
+  &-row {
+    @apply flex gap-sm items-center justify-start;
+
+    a,
+    span {
+      @apply capitalize text-orange font-normal text-xs leading-lg
+    }
+
+    a {
+      @apply text-orange opacity-[25%];
+    }
+
+    span {
+      @apply text-orange;
+    }
+  }
+}

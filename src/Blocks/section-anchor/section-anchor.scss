@@ -1,0 +1,12 @@
+.section-anchor {
+    &__row {
+        @apply flex justify-start items-center w-full pl-0 py-3xl border-t border-t-[rgba(0,_10,_20,_0.50)];
+        border-top-style: solid;
+
+        &-content {
+            h3 {
+                @apply text-black-site;
+            }
+        }
+    }
+}

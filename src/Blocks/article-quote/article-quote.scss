@@ -1,0 +1,17 @@
+.article-quote {
+    @apply py-3xl;
+
+    &__row {
+        @apply min-h-[210px] flex flex-col justify-center items-center w-full gap-2xl py-3xl m-0;
+
+        &-content {
+            &-text {
+                @apply text-center text-white text-18 font-light leading-lg w-full max-w-[666px] mx-auto font-body;
+            }
+
+            &-author {
+                @apply text-center text-white w-full font-medium uppercase leading-sm text-2xs tracking-[1.8px] font-body;
+            }
+        }
+    }
+}

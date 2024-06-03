@@ -1,0 +1,42 @@
+{
+  "name": "abtt-wp",
+  "version": "1.0.0",
+  "description": "A WordPress theme template for developing custom ACF blocks.",
+  "author": "Stephen Akinola <stephthedeveloper@gmail.com",
+  "keywords":  [
+    "wordpress",
+    "theme",
+    "acf",
+    "blocks",
+    "psr-4",
+    "scss",
+    "tailwindcss",
+    "gulp"
+  ],
+  "license": "GPL-2.0-or-later",
+  "rtlcssConfig": {
+    "options": {
+      "blacklist": {},
+      "processUrls": false,
+      "stringMap": []
+    }
+  },
+  "scripts": {
+    "dev": "gulp",
+    "build": "webpack --mode production",
+    "lint:scss": "wp-scripts lint-style 'sass/**/*.scss'",
+    "lint:js": "wp-scripts lint-js 'js/*.js'"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^10.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.72.0"
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^27.4.0",
+    "autoprefixer": "^10.4.19",
+    "gulp-clean-css": "^4.3.0",
+    "tailwindcss": "^3.4.1"
+  }
+}
